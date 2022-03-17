@@ -1,0 +1,103 @@
+Variables...
+
+    ¿Que son las variables?
+    Supongamos que tenemos una caja, esta caja tiene un tamaño lo suficientemente 
+    grande para guardar algo, entonces tomamos una pelota y la guardamos en la caja,
+    entonces, la pelota ahora esta en la caja y decidimos cerrar la caja con cinta.
+    Despues un amigo tuyo va a tu casa y deciden limpiar tu cuarto, tu amigo mira la
+    caja donde guardaste la pelota y decide que al ser una simple caja pues la va 
+    a tirar, pero tu le explicas que no la tire ya que esa caja no es solo una caja 
+    sino que ahora es una caja con una pelota y por lo tanto ya no vale lo que vale
+    una caja, sino ahora vale lo que tiene adentro de ella...
+
+    Asi funcionan las variables, cuando tu declaras una variable tambien le asignas un
+    valor, entonces la variable ahora vale lo que le pusiste como valor, y por lo tanto,
+    cuando utilizas una variable en tu codigo estas utilizando el valor que tiene esa 
+    variable...
+    Las variables se declaran por let y cosnt (la palabra "var" ya no es usada por 
+    que se considera una mala practica ya que puede generar problemas en el codigo)
+        La palabra 'let' se usa para declarar variables en si, ya que podemos 
+        reasignar el valor de esta gracias a let.
+
+        La palabra 'const' (como su nombre lo indica) es para declarar variables
+        constantes, esto quiere decir que son usadas para asignarle a la variable
+        un valor que sera constante (no cambiante) en todo el codigo (a menos que 
+        la variable contenga datos como los objetos, arrays, etc...)
+
+        Y se escribe de la siguiente manera:
+            let nombre = 'Mauro';
+
+
+Strings...
+
+    ¿Que es una string?
+    String viene de el ingles el cual al español significa cadena, asi se le llaman
+    a las cadenas de texto (palabras o oraciones) que estan entre comillas ya sean;
+    'Comillas simples', "Comillas dobles", """Comillas triples""" o `Comillas en 
+    backticks`. Y las Strings sirven para poder escribir libremente en el codigo...
+
+    Y se escribe de la siguiente manera:
+        'Mi nombre es Mauro';
+
+
+Funciones...
+
+    ¿Que son las funciones?
+    Las funciones nos sirven para reutilizar codigo y no tener que escribir lo mismo
+    una y otra vez. 
+    Las funciones necesitan de la palabra 'function' para que el interprete pueda
+    identificar que lo que estamos a punto de escribir va a ser una function, 
+    despues sigue el nombre de la funcion, este nombre nos servira para poder
+    identificar y llamar a la function mas adelante, despues de el nombre se 
+    ponen dos parentesis ( '()' ) y dentro de estos va a ir el o los parametros
+    que recibira nuestra funcion para asi poder funcionar, luego de los parentesis
+    siguen una apertura de llaves ( '{}' ) y dentro de estas ira el codigo que 
+    ejecutara la function al ser llamada 
+
+    Y se escribe de la siguiente manera:
+        function sumar(a,b) {
+            return a + b
+        }
+
+    (El 'return' sirver para retornar el valor que le especificamos a la funcion)
+
+Declaraciones / Condicionales...
+
+    ¿Que son las Declaraciones o Condicionales?
+    Son estructuras que nos permiten a condicionar algo de el codigo,
+    por ejemplo, si queremos saber si una variable es igual a 5 tendriamos 
+    que usar la palabra 'if' y despues dentro de parentesis decirle al if si
+    lo que esta adentro de los parentesis es verdadero o falso, si variable es 
+    igual a numero (lo cual en este caso seria verdadero) ejecutara el codigo 
+    que esta en el bloque del if, sino es verdadero la respuesta se enviara al
+    apartado de la estructura que ejecutara un codigo que caso de ser falso, 
+    esto se hace gracias a la palabra 'else' seguido de unas llaves para ejecutar
+    el codigo en caso de ser verdadero
+
+    Y se escribe de la siguiente manera:
+        if (variable === 5) {
+            console.log('La variable es 5')
+        } else {
+            console.log('La varibale no es 5');
+        }
+
+    Tambien esta el 'else if' que sirve para condicionar si no es lo que el if principal dijo. Y se ejecutaria asi:
+        if (variable === 5) {
+            console.log('La variable es 5')
+        } else if (variable === 9){
+            console.log('La variable es 9');
+        } else {
+            console.log('La variable no es un numero');
+        }
+
+
+Valores booleanos...
+
+    ¿Que son los valores booleanos?
+    Son dos palabras que el interprete tiene por defecto y nos sirven para 
+    identificar si algo es verdadero o falso (true o false)
+    Estas palabra se obtienen al nosotros poner codigo que solo nos devuelve
+    estas palabras y se ven de la seiguiente manera:
+        true 
+        false
+ 
