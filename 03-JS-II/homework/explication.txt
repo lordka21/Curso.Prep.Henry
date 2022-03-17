@@ -1,0 +1,43 @@
+¿Que es un bucle for?
+    "for" es es una estructura que nos ayudara a no repetir nuestro codigo
+    una y otra vez. for sirve para poder ejecutar un bloque de codigo en bucle
+    hasta que la condicion que le dimos se cumpla y se escribe de la siguiente 
+    manera: 
+        for (let i = 0; i <= 10; i++) {
+            console.log(i);
+        } 
+    
+    Este for nos dara como resultado los numero del 0 al 10
+
+¿Que es el operador && o AND? 
+    && o and, como su nombre lo dice, es un operador que nos ayudara en los condi-
+    cionales para saber si ambos son verdaderos o falsos. Si los dos son verdaderos
+    ejecutara true si ambos son falsos sera false. Si uno es falso ejecutara false
+    y se escribe de la siguiente manera:
+        if (a === 5 && b === 4) {
+            console.log('Son verdaderos');
+        } else {
+            console.log('Son falsos);
+        }
+
+¿Que es el operador !! o OR?
+    El operador !! es usado en condicionales y se usa para saber si una de las
+    dos condiciones es verdadera, si una de las dos es verdadera dara true 
+    si las dos son falsas dara false, y se escribe de la siguiente manera:
+        if (a === 5 !! b === 4) {
+            console.log('Es verdadera');
+        } else {
+            console.log('Es falsa');
+        }
+
+¿Que es el operador !?
+    Este es el operador de negacion, sirve para poder cambiar un booleano sin
+    tener que escribir mas codigo, por ejmplo, si en un condicional la respuesta
+    es true el operador ! la cambiara a false y si uno es false lo cambiara a true
+    y se escribe de la siguiente manera:
+        if ( !a === 5) {  (aqui la respuesta seria true, pero lo cambiamos a false)
+            console.log('Aqui no se ejecutaria la linea ya que a si es 5')
+        } else {
+            console.log(Al realizar el if esta linea tendria que salir ya que a si es 5 pero lo cambiamos a false);
+        }
+
