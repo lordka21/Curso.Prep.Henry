@@ -1,0 +1,5 @@
+¿Que es un array?
+    Un array o arreglo es una lista de distintos tipos de datos o de un solod dato
+    que nos ayuda a almacenar de una manera mas organizada y mas especifica los 
+    elementos y se escribe de la siguiente manera:
+        [1, false, true, 'Hola',]
