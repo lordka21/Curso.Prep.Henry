@@ -1,0 +1,53 @@
+¿Que son los objetos?
+    Son estructuras de codigo que nos ayudan a asignarle un valor a un determinado valor y asi poder acceder mas 
+    facil y rapido que con un arreglo
+
+    Las pripiedades de un objeto son son las claves y los valores (keys values) y en las claves asignamos el nombre
+    de lo que contendra el valor
+
+    Los metodos son funciones que nos permiten ejecutar codigo relacionado con el objeto, este metodo nos ayudara a 
+    no repetir codigo con tan solo una funciones
+    Y se escribiria de la siguiente manera:
+        const Person = {
+            nombre: 'Juan',
+            edad: 44,
+            pasatiempos: ['Correr','Ejercitarse','Jugar videojuegos'],
+            saludar: function() {
+                console.log(`Hola, mi nombre es ${this.nombre}, tengo ${this.edad} y mis pasatiempos son: $[this.pasatiempos}`);
+            }
+        }
+
+        juan.saludar();
+
+¿Que es el bucle for in? 
+    Es un bucle que itera en los objetos en busca de las claves (keys) hasta que no queden claves y se escribe de la
+    siguiente manera:
+        const Person = {
+            nombre: 'Juan',
+            edad: 44,
+            pasatiempos: ['Correr','Ejercitarse','Jugar videojuegos'],
+            saludar: function() {
+                console.log(`Hola, mi nombre es ${this.nombre}, tengo ${this.edad} y mis pasatiempos son: $[this.pasatiempos}`);
+            }
+        }
+
+        for (let clave in person) {
+            console.log(clave);
+        }
+
+        Y el resultado seria:
+            nombre
+            edad
+            pasatiempos
+            saludar
+
+
+Notacion de puntos vs notacion de corchetes
+    La notacion de puntos hace que buscar entre el objeto sea mas facil y los corchetes son mas estorbosos
+    ya que se debe de escribir los corchetes y entre comillas el nombre de la clave y se escribiria de la 
+    siguiente manera:
+        person.nombre
+
+        person['nombre']
+
+        
