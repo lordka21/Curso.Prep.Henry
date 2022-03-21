@@ -1,0 +1,20 @@
+¿Que es el prototype?
+    El prototype se encuentra en todo JS y es el objeto creador de todos los objetos
+    de JS
+
+¿Que son los constructores en las clases?
+    Los constructores (constructor) es, como su nombre lo dice, el constructor de 
+    la clase, este se encarga de pasar los parametros y los metodos para poder instanciar
+    una clase y asi poder usarla y se escribe de la siguiente manera:
+        class User {
+            constructor(nombre, edad, email) {
+                this.nombre = nombre;
+                this.edad = edad;
+                this.email = this.email;
+            }
+            this.saludar: function() {
+                return `Me llamo ${this.nombre}, tengo ${this.edad} años y mi email es ${this.email}`;
+            } 
+        }
+
+        
