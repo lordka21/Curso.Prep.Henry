@@ -1,0 +1,8 @@
+¿Que es una callback?
+    Es una funcion que se ejecuta dentro de otra funcion la cual se pasa como
+    parametro para poder resolver algo dentro de una funcion con otra funcion
+    la cual seria la callback y se escribe de la siguiente manera:
+        function saludo (nombre, cb) {
+            return cb (nombre);
+        }
+
