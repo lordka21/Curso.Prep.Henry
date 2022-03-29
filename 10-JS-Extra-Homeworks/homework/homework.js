@@ -10,6 +10,11 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  let res = Object.keys(objeto).map(key => {
+    return [key, objeto[key]]
+  })
+
+  return res;
 }
 
 
@@ -17,15 +22,33 @@ function numberOfCharacters(string) {
   //La función recibe un string. Recorre el srting y devuelve el caracter con el número de veces que aparece 
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
-  //Escribe tu código aquí
-}
+  //Escribe tu código aquí:
+  let obj = {};
 
+  for ( let i = 0; i < string.length; i++) {
+    if (!obj[string[i]]){
+      obj[string[i]] = 0;
+    }  
+    obj[string[i]] += 1;
+  }
+  return obj;
+}
 
 function capToFront(s) {
   //Realiza una función que reciba como parámetro un string y mueva todas las letras mayúsculas
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+  let mayu = '';
+  let minu = '';
+  for (i = 0; i < s.length; i++){ 
+     if (s[i] === s[i].toUpperCase()){ 
+       mayu = mayu + s[i]; 
+      } else {
+         minu = minu + s[i];
+        } 
+   }       
+  return (mayu + minu) 
 }
 
 
@@ -35,6 +58,13 @@ function asAmirror(str) {
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
+  let rev = '';
+  
+  for (let i = str.length -1; i >= 0; i--) {
+    rev += str[i];
+  };
+
+  return rev.split(' ').reverse().join(' ');
 } 
 
 
@@ -43,6 +73,14 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+  numero = numero.toString();
+  let rev = numero.split('').reverse().join('');
+
+  if (numero === rev) {
+    return 'Es capicua';
+  } else {
+    return 'No es capicua';
+  }
 }
 
 
